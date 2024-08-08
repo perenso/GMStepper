@@ -178,13 +178,13 @@ import UIKit
     /**
         Width of the sliding animation. When buttons clicked, the middle label does a slide animation towards to the clicked button. Defaults to 5.
     */
-    let labelSlideLength: CGFloat = 5
+    @objc public var labelSlideLength: CGFloat = 5
 
     /// Duration of the sliding animation
-    let labelSlideDuration = TimeInterval(0.1)
+    @objc public var labelSlideDuration = TimeInterval(0.1)
 
     /// Duration of the animation when the value hits the limit.
-    let limitHitAnimationDuration = TimeInterval(0.1)
+    @objc public var limitHitAnimationDuration = TimeInterval(0.1)
 
     lazy public var leftButton: UIButton = {
         let button = UIButton()
